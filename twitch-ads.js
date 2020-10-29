@@ -1,7 +1,7 @@
 /// twitch-videoad.js
 (() => {
     const version = 1;
-    if (!location.hostname.match(/((^|\.)twitch\.tv$)|(^ttv-ublock.vercel.app$)/)) return;
+    if (!document.location.hostname.match(/((^|\.)twitch\.tv$)|(^ttv-ublock.vercel.app$)/)) return;
 
     const origFetch = window.fetch;
     window.fetch = (rawUrl, ...args) => {
