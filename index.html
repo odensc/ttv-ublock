@@ -12,27 +12,19 @@
 
     .container {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-    }
-    
-    #status {
-      text-align: center;
     }
   </style>
 </head>
 
 <body>
   <main class="container">
-    <p class="status">Loading...</p>
+    <p>uBlock scriptlet for blocking Twitch ads</p>
+    <a href="https://www.reddit.com/r/Twitch/comments/jjepg8/fix_for_ublock_origin_on_twitch_i_updated_the/?sort=new">More info</a>
   </main>
 
-  <script>
-    const fetchStr = window.fetch.toString();
-    if (fetchStr.includes("version = 1")) document.querySelector(".status").textContent = "Latest uBlock script detected";
-    else if (fetchStr.includes("version =")) document.querySelector(".status").textContent = "OLD uBlock script detected";
-    else document.querySelector(".status").textContent = "uBlock script NOT detected";
-  </script>
 </body>
 </html>
