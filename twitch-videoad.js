@@ -3,9 +3,7 @@ const origFetch = window.fetch;
 window.fetch = (url, init, ...args) => {
 	if (typeof url === "string") {
 		if (url.includes("/access_token")) {
-			const newUrl = new URL(arguments[0]);
-			newUrl.searchParams.set("player_type", "dashboard");
-			url = url.href;
+			url = url.replace("player_type=site", "player_type=dashboard");
 		} else if (
 			url.includes("/gql") &&
 			init &&
