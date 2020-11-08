@@ -13,7 +13,7 @@ For security, this extension uses the minimum amount of permissions possible, an
 5. In the top left, click "Load unpacked". [**Image example**](https://i.imgur.com/kjXCaFV.png)
 6. A file dialog will open. Navigate to the folder with the code in it and select it. [**Image example**](https://i.imgur.com/I8ICXTD.png)
 
-The extension should install! Enjoy.
+The extension should install! Enjoy. Don't delete the extension folder or it will be uninstalled.
 
 ## Firefox installation
 
