@@ -23,6 +23,6 @@ Unfortunately Firefox doesn't allow for direct installation via the source code 
 1. Open the Add-ons page. [**Image example**](https://i.imgur.com/HLpzdjN.png)
 1. Near the top right, click the gear, then "Install Add-on From File..." [**Image example**](https://i.imgur.com/XSWqD1F.png)
 1. A file dialog will open. Navigate to the .xpi file you previously downloaded and select it. [**Image example**](https://i.imgur.com/htkjdNf.png)
-1. A popup will open. Click Add [**Image example**](https://i.imgur.com/FcdWXHU.png)
+1. A popup will open. Click Add. [**Image example**](https://i.imgur.com/FcdWXHU.png)
 
 The extension should install! You may need to restart your browser. Enjoy.
