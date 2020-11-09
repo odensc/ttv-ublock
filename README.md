@@ -20,9 +20,7 @@ The extension should install! Enjoy. Don't delete the extension folder or it wil
 Unfortunately Firefox doesn't allow for direct installation via the source code from GitHub, so I have to distribute a signed file from Mozilla. The code is unmodified and you can verify it as such.
 
 1. Download the XPI extension file: https://github.com/odensc/ttv-ublock/releases/download/firefox/ttv_ad_block-1.0.0-fx.xpi
-1. Open the Add-ons page. [**Image example**](https://i.imgur.com/HLpzdjN.png)
-1. Near the top right, click the gear, then "Install Add-on From File..." [**Image example**](https://i.imgur.com/XSWqD1F.png)
-1. A file dialog will open. Navigate to the .xpi file you previously downloaded and select it. [**Image example**](https://i.imgur.com/htkjdNf.png)
-1. A popup will open. Click Add. [**Image example**](https://i.imgur.com/FcdWXHU.png)
+2. A popup will open. Click Continue Installation. [**Image Example**](https://i.imgur.com/uCx0pie.png)
+3. Click Add. [**Image example**](https://i.imgur.com/FcdWXHU.png)
 
 The extension should install! You may need to restart your browser. Enjoy.
