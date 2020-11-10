@@ -1,9 +1,9 @@
-rm extension.zip
-rm -rf ./tmp
-mkdir tmp
+del extension.zip
+rmdir /s /q .\tmp
+mkdir .\tmp
 
-cp *.js ./tmp
-cp manifest.json ./tmp
+copy *.js .\tmp
+copy manifest.json .\tmp
 
-zip ./tmp/* ./extension.zip
-rm -rf ./tmp
+powershell Compress-Archive -Path ".\tmp\*" -DestinationPath ".\extension.zip"
+rmdir /s /q .\tmp
