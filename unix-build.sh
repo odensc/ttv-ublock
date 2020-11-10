@@ -5,5 +5,8 @@ mkdir tmp
 cp *.js ./tmp
 cp manifest.json ./tmp
 
-zip ./tmp/* ./extension.zip
+cd ./tmp
+zip -r ../extension.zip *
+cd ../
+
 rm -rf ./tmp
