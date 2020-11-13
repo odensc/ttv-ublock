@@ -15,12 +15,19 @@ For security, this extension uses the minimum amount of permissions possible, an
 
 The extension should install! Enjoy. Don't delete the extension folder or it will be uninstalled.
 
+*Chrome extension is pending approval for the Chrome extensions site*
+
+---
+
 ## Firefox installation
 
-Unfortunately Firefox doesn't allow for direct installation via the source code from GitHub, so I have to distribute a signed file from Mozilla. The code is unmodified and you can verify it as such.
+Download the extension on the Firefox addons site: https://addons.mozilla.org/en-US/firefox/addon/ttv-adblock/
 
-1. Download the XPI extension file: https://github.com/odensc/ttv-ublock/releases/download/firefox/ttv_ad_block-1.0.0-fx.xpi
-2. A popup will open. Click Continue Installation. [**Image Example**](https://i.imgur.com/uCx0pie.png)
-3. Click Add. [**Image example**](https://i.imgur.com/FcdWXHU.png)
+If you previously did a manual installation, remove that extension and install this one for automatic updates.
 
-The extension should install! You may need to restart your browser. Enjoy.
+---
+
+## Notes and troubleshooting
+
+* If you previously did the `userResourcesLocation` trick in uBlock, remove that script and purge the cache, as it will conflict.
+* If you have "Alternate Player for Twitch.tv" installed, disable it.
