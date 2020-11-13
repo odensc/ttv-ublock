@@ -6,6 +6,8 @@ For security, this extension uses the minimum amount of permissions possible, an
 
 ## Chrome installation
 
+Chrome Store Listing: [TTV ad-block](https://chrome.google.com/webstore/detail/ttv-ad-block/nbmipfomeebcneogmeodaejhehnkgeab)
+
 1. Download the ZIP file of the extension code: https://github.com/odensc/ttv-ublock/archive/extension.zip
 2. Unzip it into a new folder.
 3. Open the Extensions page. [**Image example**](https://i.imgur.com/ErYvch2.png)
