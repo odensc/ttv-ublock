@@ -4,6 +4,10 @@ Chrome/Firefox extension that _should?_ block ads on Twitch.
 
 For security, this extension uses the minimum amount of permissions possible, and [the code](https://github.com/odensc/ttv-ublock/blob/extension/background.js) is as simple as possible.
 
+* [Chrome installation](#chrome-installation)
+* [Firefox installation](#firefox-installation)
+* [Notes and troubleshooting](#notes-and-troubleshooting)
+
 ## Chrome installation
 
 1. Download the ZIP file of the extension code: https://github.com/odensc/ttv-ublock/archive/extension.zip
@@ -28,15 +32,11 @@ The extension should install! Enjoy. Don't delete the extension folder or it wil
 
 *Chrome extension is pending approval for the Chrome extensions site*
 
----
-
 ## Firefox installation
 
 Download the extension on the Firefox addons site: https://addons.mozilla.org/en-US/firefox/addon/ttv-adblock/
 
 If you previously did a manual installation, remove that extension and install this one for automatic updates.
-
----
 
 ## Notes and troubleshooting
 
