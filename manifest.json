@@ -1,15 +1,17 @@
 {
 	"name": "TTV ad-block",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Block ads on that certain streaming website",
 	"manifest_version": 2,
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": true
 	},
+	"options_page": "options.html",
 	"permissions": [
 		"*://*.twitch.tv/*",
 		"*://*.ttvnw.net/*",
+		"storage",
 		"webRequest",
 		"webRequestBlocking"
 	]
