@@ -109,10 +109,18 @@ function loadIframe(iframe) {
     });
 
     let config = document.querySelector('[data-a-target="player-settings-button"]');
-    config.parentElement.parentElement.insertBefore(
-      theaterButton.parentElement,
-      config.parentElement.nextSibling
-    );
+    //The interface is not made in the same way using firefox or chrome
+    //Firefox way
+    if(fullscreenButton.parentElement.children.length > 3)
+      config.parentElement.parentElement.insertBefore(
+        theaterButton.parentElement,
+        config.parentElement.nextSibling
+      );
+    else//Chrome way
+      fullscreenButton.parentElement.parentElement.insertBefore(
+        theaterButton.parentElement,
+        fullscreenButton.parentElement
+      );
 
     theaterButton.removeAttribute("disabled");
     fullscreenButton.removeAttribute("disabled");
@@ -185,14 +193,14 @@ const compressor_on = 'M850 200C877.7 200 900 222.3 900 250V750C900 777.7 877.7 
  * @param {"true" | "false"} notActive "false" if the audio compressor should be activated
  */
 function toggleAudioCompressor(video, button, notActive) {
-	if (notActive === "false") {
+  if (notActive === "false") {
     button.querySelector(".tw-tooltip").innerText = "Disable Audio Compressor";
     button.querySelector("g").innerHTML = `<path fill-rule="evenodd" d="${compressor_on}" clip-rule="evenodd"></path>`;
     button.setAttribute("data-active", "true");
     video.source.disconnect(video.context.destination);
     video.source.connect(video.compressor);
     video.compressor.connect(video.context.destination);
-	} else if (notActive === "true") {
+  } else if (notActive === "true") {
     button.querySelector(".tw-tooltip").innerText = "Audio Compressor";
     button.querySelector("g").innerHTML = `<path fill-rule="evenodd" d="${compressor_off}" clip-rule="evenodd"></path>`;
     button.setAttribute("data-active", "false");
