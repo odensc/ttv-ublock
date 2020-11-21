@@ -1,18 +1,18 @@
 var lastStreamer, existingIframe;
 
 window.addEventListener("message", (event) => {
-	if (event.data.eventName == "UPDATE_STATE" && event.data.params.quality && !document.hidden)
-		if (/^((?:160|360|480|720|900|960|1080)p(?:30|48|50|60)|chunked)$/.test(event.data.params.quality))
+  if (event.data.eventName == "UPDATE_STATE" && event.data.params.quality && !document.hidden)
+    if (/^((?:160|360|480|720|900|960|1080)p(?:30|48|50|60)|chunked)$/.test(event.data.params.quality))
       localStorage.setItem("embAdbQuality", event.data.params.quality);
 });
 
 const untouchedPages = [(link) => link.endsWith("/directory"), (link) => link.includes("/clip/")];
 
 var observer = new MutationObserver(function (mutations, observer) {
-	var container = document.querySelector(".video-player .tw-absolute");
+  var container = document.querySelector(".video-player .tw-absolute");
 
   //Optimization: We do not check everything when numbers like viewers or anything updates.
-	if (mutations.length === 1 && (mutations[0].target.classList.contains("tw-animated-number--monospaced") || mutations[0].target.classList.contains("tw-animated-number")))
+  if (mutations.length === 1 && (mutations[0].target.classList.contains("tw-animated-number--monospaced") || mutations[0].target.classList.contains("tw-animated-number")))
     return;
     
   //If there is no container, then the page is not fully loaded
@@ -33,31 +33,31 @@ var observer = new MutationObserver(function (mutations, observer) {
   } else if(isOnMainPage)//If the user is on the main page, we do not modify anything (and we do not revert our modifications (because of the little player at the bottom of the page))
     return;
 
-	let streamerName = window.location.pathname.split("/")[1];
+  let streamerName = window.location.pathname.split("/")[1];
 
   //We save the latest stream quality choosen by the user so we use it there to tell the embeded iframe what quality to use
-	let quality = localStorage["embAdbQuality"] || "chunked";
-	let iframeUrl = `https://player.twitch.tv/?channel=${streamerName}&muted=false&parent=twitch.tv&quality=${quality}`;
+  let quality = localStorage["embAdbQuality"] || "chunked";
+  let iframeUrl = `https://player.twitch.tv/?channel=${streamerName}&muted=false&parent=twitch.tv&quality=${quality}`;
 
   //We hide everything of the original player and kill the video stream of it
-	for (let el of container.children) {
+  for (let el of container.children) {
     if (el.tagName != "IFRAME")
       el.hidden = true;
     if (el.tagName == "VIDEO")
       el.src = "";
-	}
+  }
 
-	if (!existingIframe || streamerName != lastStreamer) {
-		existingIframe ??= document.createElement("iframe");
+  if (!existingIframe || streamerName != lastStreamer) {
+    existingIframe ??= document.createElement("iframe");
     existingIframe.style = "width: 100%; height: 100%";
-		existingIframe.src = iframeUrl;
-		//Hide iframe when loading (to avoid white flashing screen)
+    existingIframe.src = iframeUrl;
+    //Hide iframe when loading (to avoid white flashing screen)
     existingIframe.style.visibility = "hidden";
     existingIframe.onload = () => loadIframe(existingIframe);
-		container.appendChild(existingIframe);
-	}
+    container.appendChild(existingIframe);
+  }
 
-	lastStreamer = streamerName;
+  lastStreamer = streamerName;
 });
 
 observer.observe(document.body, {
@@ -68,9 +68,9 @@ observer.observe(document.body, {
 
 //Code modifying the iframe
 function loadIframe(iframe) {
-	let window = iframe.contentWindow;
-	let document = window.document;
-	//More optimized
+  let window = iframe.contentWindow;
+  let document = window.document;
+
   let observer = new MutationObserver(function (mutations, observer) {
     let logo = document.querySelector('[data-a-target="player-twitch-logo-button"]');
     let card = document.getElementsByClassName("tw-card")[0];
