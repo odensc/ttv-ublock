@@ -77,6 +77,13 @@ function loadIframe(iframe) {
     let panel = document.getElementsByClassName("stream-info-social-panel")[0];
     let fullscreenButton = document.querySelector('[data-a-target="player-fullscreen-button"]');
 
+    //If all the elements are loaded, we continue.
+    if (!logo || !card || !panel || !fullscreenButton)
+      return;
+      
+    //Once everything is loaded, we show the iframe
+    existingIframe.style.visibility = "";
+
     //We have to make a function to get the real theater button since the element changes everytime you go in fullscreen mode
     let getRealTheaterButton = () => window.parent.document.querySelector('[data-a-target="player-theatre-mode-button"]');
 
@@ -85,9 +92,6 @@ function loadIframe(iframe) {
     //We copy the button from the real interface (so we have the title in the good language and the good look)
     let theaterButton = getRealTheaterButton().parentElement.cloneNode(true).getElementsByTagName("button")[0];
 
-    //If all the elements are loaded, we continue.
-    if (!logo || !card || !panel || !fullscreenButton)
-      return;
 
     //No need to listen for changes now
     observer.disconnect();
@@ -123,9 +127,6 @@ function loadIframe(iframe) {
 
     //Double click
     document.querySelector(".click-handler").addEventListener("dblclick", () => fullscreenButton.click());
-
-    //Once everything is loaded, we show the iframe
-    existingIframe.style.visibility = "";
   });
 
   observer.observe(document.body, { attributes: false, childList: true, subtree: true });
