@@ -164,7 +164,7 @@ function loadIframe(iframe) {
         toggleAudioCompressor(video, compressorButton, "false");
   });
 
-  //If an overlay like (do you have +18) is here, we show the iframe
+  //If an overlay like (are you +18) is here, we show the iframe
   if(document.querySelector(".content-overlay-gate")) {
     existingIframe.style.visibility = "";
     document.querySelector('[data-a-target="player-overlay-mature-accept"]').addEventListener("click", () => {
