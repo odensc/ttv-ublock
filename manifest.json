@@ -1,21 +1,17 @@
 {
 	"name": "TTV ad-block",
-	"version": "1.1.1",
+	"version": "2.0.0",
 	"description": "Block ads on that certain streaming website",
 	"manifest_version": 2,
-	"background": {
-		"scripts": ["background.js"],
-		"persistent": true
-	},
-	"options_ui": {
-		"page": "options.html",
-		"open_in_tab": true
-	},
+	"content_scripts": [
+		{
+			"matches": ["https://twitch.tv/*", "https://www.twitch.tv/*"],
+			"js": ["scripts/mainsite.js"]
+		}
+	],
 	"permissions": [
 		"*://*.twitch.tv/*",
 		"*://*.ttvnw.net/*",
-		"storage",
-		"webRequest",
-		"webRequestBlocking"
+		"activeTab"
 	]
 }
