@@ -152,7 +152,7 @@ function loadIframe(iframe) {
     compressorButton.setAttribute("data-active", "false");
 
     let video = document.querySelector("video");
-    video.context = new AudioContext();
+    video.context = new window.AudioContext();
     video.source = video.context.createMediaElementSource(video);
     video.compressor = video.context.createDynamicsCompressor();
 
