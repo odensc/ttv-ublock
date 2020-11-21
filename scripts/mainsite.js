@@ -108,9 +108,10 @@ function loadIframe(iframe) {
       fullscreenButton.innerHTML = realFullscreenButton.innerHTML;
     });
 
-    fullscreenButton.parentElement.parentElement.insertBefore(
+    let config = document.querySelector('[data-a-target="player-settings-button"]');
+    config.parentElement.parentElement.insertBefore(
       theaterButton.parentElement,
-      fullscreenButton.parentElement
+      config.parentElement.nextSibling
     );
 
     theaterButton.removeAttribute("disabled");
