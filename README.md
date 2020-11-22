@@ -4,7 +4,7 @@
 
 Chrome/Firefox extension that _should?_ block ads on Twitch.
 
-For security, this extension uses the minimum amount of permissions possible, and [the code](https://github.com/odensc/ttv-ublock/blob/extension/background.js) is as simple as possible.
+For security, this extension uses the minimum amount of permissions possible, and [the code](https://github.com/odensc/ttv-ublock/tree/extension) is as simple as possible.
 
 - [Chrome installation](#chrome-installation)
 - [Firefox installation](#firefox-installation)
