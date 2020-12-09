@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A9D9B4925813245001CEC32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D9B4825813245001CEC32 /* AppDelegate.swift */; };
+		1A9D9B4C25813245001CEC32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D9B4A25813245001CEC32 /* Main.storyboard */; };
+		1A9D9B4E25813245001CEC32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D9B4D25813245001CEC32 /* ViewController.swift */; };
+		1A9D9B5025813246001CEC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D9B4F25813246001CEC32 /* Assets.xcassets */; };
+		1A9D9B5B25813246001CEC32 /* TTV_UblockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D9B5A25813246001CEC32 /* TTV_UblockTests.swift */; };
+		1A9D9B6625813246001CEC32 /* TTV_UblockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D9B6525813246001CEC32 /* TTV_UblockUITests.swift */; };
+		1A9D9B6D25813246001CEC32 /* TTV-Ublock Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A9D9B6C25813246001CEC32 /* TTV-Ublock Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A9D9B7225813246001CEC32 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9D9B7125813246001CEC32 /* Cocoa.framework */; };
+		1A9D9B7525813246001CEC32 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D9B7425813246001CEC32 /* SafariWebExtensionHandler.swift */; };
+		1A9D9B7825813246001CEC32 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D9B7725813246001CEC32 /* _locales */; };
+		1A9D9B7A25813246001CEC32 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D9B7925813246001CEC32 /* images */; };
+		1A9D9B7C25813246001CEC32 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D9B7B25813246001CEC32 /* manifest.json */; };
+		1A9D9B8225813246001CEC32 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D9B8125813246001CEC32 /* popup.html */; };
+		1A9D9B8425813246001CEC32 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D9B8325813246001CEC32 /* popup.css */; };
+		1A9D9B8625813246001CEC32 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D9B8525813246001CEC32 /* popup.js */; };
+		1A9F029E258189CE00EC536C /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F029D258189CE00EC536C /* script.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A9D9B5725813246001CEC32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A9D9B3C25813245001CEC32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A9D9B4325813245001CEC32;
+			remoteInfo = "TTV-Ublock";
+		};
+		1A9D9B6225813246001CEC32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A9D9B3C25813245001CEC32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A9D9B4325813245001CEC32;
+			remoteInfo = "TTV-Ublock";
+		};
+		1A9D9B6E25813246001CEC32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A9D9B3C25813245001CEC32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A9D9B6B25813246001CEC32;
+			remoteInfo = "TTV-Ublock Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A9D9B8E25813246001CEC32 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A9D9B6D25813246001CEC32 /* TTV-Ublock Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A9D9B4425813245001CEC32 /* TTV-Ublock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTV-Ublock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9D9B4725813245001CEC32 /* TTV_Ublock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TTV_Ublock.entitlements; sourceTree = "<group>"; };
+		1A9D9B4825813245001CEC32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A9D9B4B25813245001CEC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A9D9B4D25813245001CEC32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A9D9B4F25813246001CEC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A9D9B5125813246001CEC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9D9B5625813246001CEC32 /* TTV-UblockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTV-UblockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9D9B5A25813246001CEC32 /* TTV_UblockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTV_UblockTests.swift; sourceTree = "<group>"; };
+		1A9D9B5C25813246001CEC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9D9B6125813246001CEC32 /* TTV-UblockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTV-UblockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9D9B6525813246001CEC32 /* TTV_UblockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTV_UblockUITests.swift; sourceTree = "<group>"; };
+		1A9D9B6725813246001CEC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9D9B6C25813246001CEC32 /* TTV-Ublock Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TTV-Ublock Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9D9B7125813246001CEC32 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1A9D9B7425813246001CEC32 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		1A9D9B7725813246001CEC32 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		1A9D9B7925813246001CEC32 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		1A9D9B7B25813246001CEC32 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		1A9D9B8125813246001CEC32 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		1A9D9B8325813246001CEC32 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		1A9D9B8525813246001CEC32 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		1A9D9B8725813246001CEC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9D9B8825813246001CEC32 /* TTV_Ublock_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TTV_Ublock_Extension.entitlements; sourceTree = "<group>"; };
+		1A9F029D258189CE00EC536C /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A9D9B4125813245001CEC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B5325813246001CEC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B5E25813246001CEC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B6925813246001CEC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D9B7225813246001CEC32 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A9D9B3B25813245001CEC32 = {
+			isa = PBXGroup;
+			children = (
+				1A9D9B4625813245001CEC32 /* TTV-Ublock */,
+				1A9D9B5925813246001CEC32 /* TTV-UblockTests */,
+				1A9D9B6425813246001CEC32 /* TTV-UblockUITests */,
+				1A9D9B7325813246001CEC32 /* TTV-Ublock Extension */,
+				1A9D9B7025813246001CEC32 /* Frameworks */,
+				1A9D9B4525813245001CEC32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A9D9B4525813245001CEC32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D9B4425813245001CEC32 /* TTV-Ublock.app */,
+				1A9D9B5625813246001CEC32 /* TTV-UblockTests.xctest */,
+				1A9D9B6125813246001CEC32 /* TTV-UblockUITests.xctest */,
+				1A9D9B6C25813246001CEC32 /* TTV-Ublock Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A9D9B4625813245001CEC32 /* TTV-Ublock */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D9B4725813245001CEC32 /* TTV_Ublock.entitlements */,
+				1A9D9B4825813245001CEC32 /* AppDelegate.swift */,
+				1A9D9B4A25813245001CEC32 /* Main.storyboard */,
+				1A9D9B4D25813245001CEC32 /* ViewController.swift */,
+				1A9D9B4F25813246001CEC32 /* Assets.xcassets */,
+				1A9D9B5125813246001CEC32 /* Info.plist */,
+			);
+			path = "TTV-Ublock";
+			sourceTree = "<group>";
+		};
+		1A9D9B5925813246001CEC32 /* TTV-UblockTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D9B5A25813246001CEC32 /* TTV_UblockTests.swift */,
+				1A9D9B5C25813246001CEC32 /* Info.plist */,
+			);
+			path = "TTV-UblockTests";
+			sourceTree = "<group>";
+		};
+		1A9D9B6425813246001CEC32 /* TTV-UblockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D9B6525813246001CEC32 /* TTV_UblockUITests.swift */,
+				1A9D9B6725813246001CEC32 /* Info.plist */,
+			);
+			path = "TTV-UblockUITests";
+			sourceTree = "<group>";
+		};
+		1A9D9B7025813246001CEC32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D9B7125813246001CEC32 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A9D9B7325813246001CEC32 /* TTV-Ublock Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D9B7425813246001CEC32 /* SafariWebExtensionHandler.swift */,
+				1A9D9B8725813246001CEC32 /* Info.plist */,
+				1A9D9B8825813246001CEC32 /* TTV_Ublock_Extension.entitlements */,
+				1A9D9B7625813246001CEC32 /* Resources */,
+			);
+			path = "TTV-Ublock Extension";
+			sourceTree = "<group>";
+		};
+		1A9D9B7625813246001CEC32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A9F029D258189CE00EC536C /* script.js */,
+				1A9D9B7725813246001CEC32 /* _locales */,
+				1A9D9B7925813246001CEC32 /* images */,
+				1A9D9B7B25813246001CEC32 /* manifest.json */,
+				1A9D9B8125813246001CEC32 /* popup.html */,
+				1A9D9B8325813246001CEC32 /* popup.css */,
+				1A9D9B8525813246001CEC32 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A9D9B4325813245001CEC32 /* TTV-Ublock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9D9B8F25813246001CEC32 /* Build configuration list for PBXNativeTarget "TTV-Ublock" */;
+			buildPhases = (
+				1A9D9B4025813245001CEC32 /* Sources */,
+				1A9D9B4125813245001CEC32 /* Frameworks */,
+				1A9D9B4225813245001CEC32 /* Resources */,
+				1A9D9B8E25813246001CEC32 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A9D9B6F25813246001CEC32 /* PBXTargetDependency */,
+			);
+			name = "TTV-Ublock";
+			productName = "TTV-Ublock";
+			productReference = 1A9D9B4425813245001CEC32 /* TTV-Ublock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A9D9B5525813246001CEC32 /* TTV-UblockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9D9B9225813246001CEC32 /* Build configuration list for PBXNativeTarget "TTV-UblockTests" */;
+			buildPhases = (
+				1A9D9B5225813246001CEC32 /* Sources */,
+				1A9D9B5325813246001CEC32 /* Frameworks */,
+				1A9D9B5425813246001CEC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A9D9B5825813246001CEC32 /* PBXTargetDependency */,
+			);
+			name = "TTV-UblockTests";
+			productName = "TTV-UblockTests";
+			productReference = 1A9D9B5625813246001CEC32 /* TTV-UblockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A9D9B6025813246001CEC32 /* TTV-UblockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9D9B9525813246001CEC32 /* Build configuration list for PBXNativeTarget "TTV-UblockUITests" */;
+			buildPhases = (
+				1A9D9B5D25813246001CEC32 /* Sources */,
+				1A9D9B5E25813246001CEC32 /* Frameworks */,
+				1A9D9B5F25813246001CEC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A9D9B6325813246001CEC32 /* PBXTargetDependency */,
+			);
+			name = "TTV-UblockUITests";
+			productName = "TTV-UblockUITests";
+			productReference = 1A9D9B6125813246001CEC32 /* TTV-UblockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1A9D9B6B25813246001CEC32 /* TTV-Ublock Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9D9B8B25813246001CEC32 /* Build configuration list for PBXNativeTarget "TTV-Ublock Extension" */;
+			buildPhases = (
+				1A9D9B6825813246001CEC32 /* Sources */,
+				1A9D9B6925813246001CEC32 /* Frameworks */,
+				1A9D9B6A25813246001CEC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TTV-Ublock Extension";
+			productName = "TTV-Ublock Extension";
+			productReference = 1A9D9B6C25813246001CEC32 /* TTV-Ublock Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A9D9B3C25813245001CEC32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1A9D9B4325813245001CEC32 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1A9D9B5525813246001CEC32 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1A9D9B4325813245001CEC32;
+					};
+					1A9D9B6025813246001CEC32 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1A9D9B4325813245001CEC32;
+					};
+					1A9D9B6B25813246001CEC32 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 1A9D9B3F25813245001CEC32 /* Build configuration list for PBXProject "TTV-Ublock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A9D9B3B25813245001CEC32;
+			productRefGroup = 1A9D9B4525813245001CEC32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A9D9B4325813245001CEC32 /* TTV-Ublock */,
+				1A9D9B5525813246001CEC32 /* TTV-UblockTests */,
+				1A9D9B6025813246001CEC32 /* TTV-UblockUITests */,
+				1A9D9B6B25813246001CEC32 /* TTV-Ublock Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A9D9B4225813245001CEC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D9B5025813246001CEC32 /* Assets.xcassets in Resources */,
+				1A9D9B4C25813245001CEC32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B5425813246001CEC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B5F25813246001CEC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B6A25813246001CEC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D9B8425813246001CEC32 /* popup.css in Resources */,
+				1A9D9B8225813246001CEC32 /* popup.html in Resources */,
+				1A9D9B7A25813246001CEC32 /* images in Resources */,
+				1A9F029E258189CE00EC536C /* script.js in Resources */,
+				1A9D9B7C25813246001CEC32 /* manifest.json in Resources */,
+				1A9D9B7825813246001CEC32 /* _locales in Resources */,
+				1A9D9B8625813246001CEC32 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A9D9B4025813245001CEC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D9B4E25813245001CEC32 /* ViewController.swift in Sources */,
+				1A9D9B4925813245001CEC32 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B5225813246001CEC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D9B5B25813246001CEC32 /* TTV_UblockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B5D25813246001CEC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D9B6625813246001CEC32 /* TTV_UblockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9D9B6825813246001CEC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D9B7525813246001CEC32 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A9D9B5825813246001CEC32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A9D9B4325813245001CEC32 /* TTV-Ublock */;
+			targetProxy = 1A9D9B5725813246001CEC32 /* PBXContainerItemProxy */;
+		};
+		1A9D9B6325813246001CEC32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A9D9B4325813245001CEC32 /* TTV-Ublock */;
+			targetProxy = 1A9D9B6225813246001CEC32 /* PBXContainerItemProxy */;
+		};
+		1A9D9B6F25813246001CEC32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A9D9B6B25813246001CEC32 /* TTV-Ublock Extension */;
+			targetProxy = 1A9D9B6E25813246001CEC32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A9D9B4A25813245001CEC32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A9D9B4B25813245001CEC32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A9D9B8925813246001CEC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A9D9B8A25813246001CEC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1A9D9B8C25813246001CEC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TTV-Ublock Extension/TTV_Ublock_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2UF7N2827;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TTV-Ublock Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.TTV-Ublock.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A9D9B8D25813246001CEC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TTV-Ublock Extension/TTV_Ublock_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2UF7N2827;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TTV-Ublock Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.TTV-Ublock.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A9D9B9025813246001CEC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TTV-Ublock/TTV_Ublock.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E2UF7N2827;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TTV-Ublock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.TTV-Ublock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A9D9B9125813246001CEC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TTV-Ublock/TTV_Ublock.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E2UF7N2827;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TTV-Ublock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.TTV-Ublock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A9D9B9325813246001CEC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E2UF7N2827;
+				INFOPLIST_FILE = "TTV-UblockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.TTV-UblockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTV-Ublock.app/Contents/MacOS/TTV-Ublock";
+			};
+			name = Debug;
+		};
+		1A9D9B9425813246001CEC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E2UF7N2827;
+				INFOPLIST_FILE = "TTV-UblockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.TTV-UblockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTV-Ublock.app/Contents/MacOS/TTV-Ublock";
+			};
+			name = Release;
+		};
+		1A9D9B9625813246001CEC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E2UF7N2827;
+				INFOPLIST_FILE = "TTV-UblockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.TTV-UblockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TTV-Ublock";
+			};
+			name = Debug;
+		};
+		1A9D9B9725813246001CEC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E2UF7N2827;
+				INFOPLIST_FILE = "TTV-UblockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.TTV-UblockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "TTV-Ublock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A9D9B3F25813245001CEC32 /* Build configuration list for PBXProject "TTV-Ublock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9D9B8925813246001CEC32 /* Debug */,
+				1A9D9B8A25813246001CEC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A9D9B8B25813246001CEC32 /* Build configuration list for PBXNativeTarget "TTV-Ublock Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9D9B8C25813246001CEC32 /* Debug */,
+				1A9D9B8D25813246001CEC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A9D9B8F25813246001CEC32 /* Build configuration list for PBXNativeTarget "TTV-Ublock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9D9B9025813246001CEC32 /* Debug */,
+				1A9D9B9125813246001CEC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A9D9B9225813246001CEC32 /* Build configuration list for PBXNativeTarget "TTV-UblockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9D9B9325813246001CEC32 /* Debug */,
+				1A9D9B9425813246001CEC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A9D9B9525813246001CEC32 /* Build configuration list for PBXNativeTarget "TTV-UblockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9D9B9625813246001CEC32 /* Debug */,
+				1A9D9B9725813246001CEC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A9D9B3C25813245001CEC32 /* Project object */;
+}

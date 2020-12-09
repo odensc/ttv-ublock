@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/james/Documents/Xcode/TTV-Ublock/TTV-Ublock Extension/Resources/script.js">
+   </FileRef>
+   <FileRef
+      location = "group:../../../script.js">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

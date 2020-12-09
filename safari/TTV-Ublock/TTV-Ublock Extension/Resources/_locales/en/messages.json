@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "TTV-Ublock Extension",
+        "description": "TTV-Ublock"
+    },
+    "extension_description": {
+        "message": "Blocks ads on Twitch",
+        "description": "Safari port of https://github.com/odensc/ttv-ublock"
+    }
+}
