@@ -1,5 +1,13 @@
 # TTV ad-block
 
+# Twitch has circumvented this method of ad-blocking with a third-party extension warning screen.
+
+The extension is still available as described below, but depending on your usage, may not be adequate. This repository is now archived.
+
+@pixeltris has also curated some possible alternative methods: https://github.com/pixeltris/TwitchAdSolutions
+
+---------
+
 **Works best when paired with uBlock Origin**
 
 Chrome/Firefox extension that _should?_ block ads on Twitch.
@@ -12,7 +20,7 @@ For security, this extension uses the minimum amount of permissions possible, an
 
 ## Chrome installation
 
-Download the extension from the Chrome extension site: https://chrome.google.com/webstore/detail/ttv-ad-block/kndhknfnihidhcfnaacnndbolonbimai/related
+Download the extension from the Chrome extension site: https://chrome.google.com/webstore/detail/ttv-ad-block/kndhknfnihidhcfnaacnndbolonbimai
 
 If you previously did a manual installation, remove that extension and install this one for automatic updates.
 
