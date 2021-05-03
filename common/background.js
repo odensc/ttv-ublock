@@ -1,3 +1,6 @@
+const options = ["blocking", "requestHeaders"]
+if (chrome.app) options.push("extraHeaders")
+
 chrome.webRequest.onBeforeSendHeaders.addListener(
 	({ requestHeaders }) => {
 		for (const header of requestHeaders) {
@@ -9,6 +12,5 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 		}
 		return { requestHeaders };
 	},
-	{ urls: ["*://*.hls.ttvnw.net/*"] },
-	["blocking", "requestHeaders", "extraHeaders"]
+	{ urls: ["*://*.hls.ttvnw.net/*"] }, options
 );
